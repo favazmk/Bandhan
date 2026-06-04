@@ -242,7 +242,7 @@ footer {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background: url('/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
 }
