@@ -17,7 +17,14 @@ import {
   Star, 
   Sprout, 
   BookOpen, 
-  User 
+  User,
+  Shovel,
+  Hammer,
+  Cpu,
+  Clock,
+  Quote,
+  Award,
+  ShieldCheck
 } from 'lucide';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,7 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
             Star,
             Sprout,
             BookOpen,
-            User
+            User,
+            Shovel,
+            Hammer,
+            Cpu,
+            Clock,
+            Quote,
+            Award,
+            ShieldCheck
         }
     });
 });

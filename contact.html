@@ -17,7 +17,7 @@
           <a href="/">Home</a>
           <a href="/about.html">About Us</a>
           <a href="/services.html">Services</a>
-          <a href="/policy.html">HSE Policy</a>
+          <a href="/policy.html">HSE & Quality</a>
           <a href="/contact.html" class="active">Contact</a>
         </nav>
       </div>
@@ -34,48 +34,79 @@
     <!-- Main Content -->
     <section class="section">
       <div class="container">
+        <p style="font-size: 1.2rem; text-align: center; max-width: 700px; margin: 0 auto 50px; color: var(--text-muted);">
+          We are ready to support your upcoming projects with reliable contracting, maintenance, and technical support solutions across the UAE.
+        </p>
+
         <div class="about-grid">
           
+          <!-- Contact Info Column -->
           <div class="contact-info">
-            <h2 class="section-title">Office Address</h2>
+            <h2 class="section-title">Contact Information</h2>
+            
             <div style="margin-bottom: 25px;">
-              <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="map-pin" class="contact-item-icon"></i> Location</strong>
-              <p>Bandhan Contracting & General Maintenance L.L.C<br/>Harmony Safety Trading Building-2<br/>Office No-13, Block-B, 2nd Floor<br/>Mussafah M32_02, Plot No-31<br/>Abu Dhabi, United Arab Emirates</p>
+              <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="map-pin" class="contact-item-icon"></i> Office Address</strong>
+              <p>Bandhan Contracting & General Maintenance LLC<br/>Musaffah M32, Abu Dhabi, United Arab Emirates</p>
             </div>
+            
             <div style="margin-bottom: 25px;">
               <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="phone" class="contact-item-icon"></i> Phone</strong>
-              <p>+971-54-445-3885</p>
+              <p>+971 54 445 3885</p>
             </div>
+            
             <div style="margin-bottom: 25px;">
               <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="mail" class="contact-item-icon"></i> Email</strong>
-              <p>info.bandhanuae@gmail.com<br/>am.seal1982@gmail.com</p>
+              <p>info.bandhanuae@gmail.com</p>
             </div>
+
             <div style="margin-bottom: 25px;">
-              <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="user" class="contact-item-icon"></i> Project Manager</strong>
-              <p>Amaresh Seal</p>
+              <strong style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-green);"><i data-lucide="clock" class="contact-item-icon"></i> Business Hours</strong>
+              <p>Monday to Saturday – 8:00 AM to 6:00 PM</p>
             </div>
           </div>
 
-          <div class="contact-form bg-light" style="padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Send us a message</h3>
+          <!-- Inquiry Form Column -->
+          <div class="contact-form bg-light" style="padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border-color);">
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Inquiry Form</h3>
             <form>
               <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name</label>
-                <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; transition: var(--transition);">
               </div>
               <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address</label>
-                <input type="email" placeholder="Your Email" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; transition: var(--transition);">
+              </div>
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Phone Number</label>
+                <input type="tel" placeholder="Your Phone Number" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; transition: var(--transition);">
               </div>
               <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
-                <textarea rows="5" placeholder="How can we help you?" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
+                <textarea rows="5" placeholder="How can we help you?" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical; transition: var(--transition);"></textarea>
               </div>
-              <button type="submit" class="btn btn-secondary" style="width: 100%;">Submit Message</button>
+              <button type="submit" class="btn btn-secondary" style="width: 100%;">Submit Inquiry</button>
             </form>
           </div>
 
         </div>
+
+        <!-- Google Map Section -->
+        <h3 style="font-size: 1.8rem; text-align: center; margin-top: 60px; margin-bottom: 20px; color: var(--text-dark);">Our Location</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14543.834415849805!2d54.512683050000005!3d24.3129528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e41df2623a9d5%3A0xc3cfd6199a4e402!2sMusaffah%20-%20M-32%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1717500000000!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quick Contact CTA Section -->
+    <section class="section bg-yellow text-center">
+      <div class="container" style="max-width: 800px;">
+        <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 15px; color: var(--dark-bg);">Get in Touch</h2>
+        <p style="font-size: 1.2rem; line-height: 1.8; color: var(--dark-bg); font-weight: 500; margin-bottom: 0;">
+          Get in touch with our team today to discuss your project requirements, request a quotation, or learn more about our services.
+        </p>
       </div>
     </section>
 
@@ -93,15 +124,15 @@
               <li><a href="/">Home</a></li>
               <li><a href="/about.html">About Us</a></li>
               <li><a href="/services.html">Services</a></li>
-              <li><a href="/policy.html">HSE Policy</a></li>
+              <li><a href="/policy.html">HSE & Quality</a></li>
               <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Contact Info</h4>
             <ul>
-              <li><i data-lucide="map-pin" class="contact-item-icon"></i> <span>Harmony Safety Trading Building-2, Mussafah M32_02, Abu Dhabi, UAE</span></li>
-              <li><i data-lucide="phone" class="contact-item-icon"></i> <span>+971-54-445-3885</span></li>
+              <li><i data-lucide="map-pin" class="contact-item-icon"></i> <span>Musaffah M32, Abu Dhabi, United Arab Emirates</span></li>
+              <li><i data-lucide="phone" class="contact-item-icon"></i> <span>+971 54 445 3885</span></li>
               <li><i data-lucide="mail" class="contact-item-icon"></i> <span>info.bandhanuae@gmail.com</span></li>
             </ul>
           </div>
