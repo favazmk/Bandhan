@@ -24,7 +24,10 @@ import {
   Clock,
   Quote,
   Award,
-  ShieldCheck
+  ShieldCheck,
+  Menu,
+  X,
+  MessageCircle
 } from 'lucide';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -60,9 +63,28 @@ function init() {
             Clock,
             Quote,
             Award,
-            ShieldCheck
+            ShieldCheck,
+            Menu,
+            X,
+            MessageCircle
         }
     });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            createIcons({ icons: { Menu, X } });
+        });
+    }
 
     // Initialize 3D Scroll Reveal Intersection Observer
     const revealElements = document.querySelectorAll('.reveal-3d');
@@ -138,7 +160,7 @@ function init() {
     
     if (scrollyCanvas) {
         const ctx = scrollyCanvas.getContext('2d');
-        const totalFrames = 38;
+        const totalFrames = 114;
         const images = [];
         let loadedCount = 0;
         
@@ -152,7 +174,7 @@ function init() {
             for (let i = 1; i <= totalFrames; i++) {
                 const img = new Image();
                 const frameNum = String(i).padStart(3, '0');
-                img.src = `/3D%20Sequences/ezgif-frame-${frameNum}.jpg`;
+                img.src = `/3D%20New%20Sequences/ezgif-frame-${frameNum}.jpg`;
                 
                 img.onload = () => {
                     loadedCount++;
@@ -291,6 +313,15 @@ function init() {
                 ease: "power2.in",
                 duration: 0.08
             }, 0.95);
+        });
+    }
+
+    // Floating Contact Button Toggle
+    const floatingMainBtn = document.querySelector('.floating-main-btn');
+    const floatingContact = document.querySelector('.floating-contact');
+    if (floatingMainBtn && floatingContact) {
+        floatingMainBtn.addEventListener('click', () => {
+            floatingContact.classList.toggle('active');
         });
     }
 }
