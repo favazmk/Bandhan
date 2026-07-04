@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./Fav Icon.PNG" />
+    <link rel="icon" type="image/png" href="./assets/Fav Icon.PNG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - Bandhan Contracting</title>
     <link rel="stylesheet" href="./style.css" />
@@ -13,7 +13,7 @@
       <div class="container navbar">
         <div class="logo-container">
           <a href="./index.html" class="logo-link">
-            <img src="./new logo.PNG" alt="Bandhan Logo" class="logo-img" >
+            <img src="./assets/new logo.PNG" alt="Bandhan Logo" class="logo-img" >
             </a>
         </div>
         <button class="menu-toggle" aria-label="Toggle navigation" style="display: none; background: transparent; border: none; color: var(--text-light); cursor: pointer;">
@@ -33,7 +33,7 @@
     <!-- Services Banner -->
     <section class="page-header bg-darker" style="position: relative; overflow: hidden;">
       <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.2;">
-        <source src="./page-heros/Service-page.mp4" type="video/mp4">
+        <source src="./assets/page-heros/Service-page.mp4" type="video/mp4">
       </video>
       <div class="container" style="position: relative; z-index: 1;">
         <h1 class="fade-in delay-1 scroll-float" data-play="onload" style="font-size: 3rem; color: var(--text-light); letter-spacing: -1px;"><span class="scroll-float-text">Our Services</span></h1>
@@ -129,7 +129,7 @@
           <div class="footer-col">
             <div class="logo-container" style="margin-bottom: 20px;">
               <a href="./index.html" class="logo-link">
-                <img src="./new logo.PNG" alt="Bandhan Logo" class="logo-img" >
+                <img src="./assets/new logo.PNG" alt="Bandhan Logo" class="logo-img" >
                 </a>
             </div>
             <p style="color: #a5b4b4; line-height: 1.8;">Bandhan Contracting & General Maintenance LLC<br/>Delivering top-tier execution and maintenance across the UAE.</p>
@@ -177,6 +177,10 @@
         <i data-lucide="x" class="icon-close"></i>
       </button>
     </div>
-    <script type="module" src="./main.js"></script>
+    <!-- External CDNs for GSAP, ScrollTrigger, and Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./main.js" defer></script>
   </body>
 </html>
