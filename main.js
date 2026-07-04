@@ -68,8 +68,8 @@ function init() {
         });
     }
 
-    // Initialize dynamic 3D cursor tilt effect for all images
-    const images = document.querySelectorAll('img');
+    // Initialize dynamic 3D cursor tilt effect for all images (excluding logo)
+    const images = document.querySelectorAll('img:not(.logo-img)');
     images.forEach(img => {
         img.addEventListener('mousemove', (e) => {
             const rect = img.getBoundingClientRect();
