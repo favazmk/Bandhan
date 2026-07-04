@@ -2,7 +2,8 @@
 
 A premium, fully responsive, and highly interactive static corporate website built for Bandhan Contracting & General Maintenance LLC. This website showcases civil engineering, earthworks, piping, and general contracting services with cutting-edge 3D interactive scrollytelling animations.
 
-* **Live Demo:** [Deployable directly on any static host, e.g. Hostinger, Vercel, Netlify]
+* **Live Demo (Primary):** [Deployable directly on any static host, e.g., Hostinger]
+* **Live Demo (Secondary):** [bandhan-psi.vercel.app](https://bandhan-psi.vercel.app/)
 
 ---
 
