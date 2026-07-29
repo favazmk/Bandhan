@@ -262,8 +262,8 @@ header {
 }
 
 .logo-img {
-  height: 120px;
-  margin: -36px 0;
+  height: 50px;
+  margin: 0;
   width: auto;
   border-radius: 4px;
   object-fit: contain;
@@ -1115,7 +1115,7 @@ footer {
 
 .loader-logo-container {
   position: relative;
-  width: 400px;
+  width: 250px;
   display: flex;
   justify-content: center;
   animation: logo-pulse 2s infinite ease-in-out;
@@ -1152,9 +1152,11 @@ footer {
 
 .scrollytelling-loader p {
   font-family: var(--font-accent);
-  font-size: 0.85rem;
-  letter-spacing: 2px;
+  font-size: 1.15rem;
+  letter-spacing: 3px;
   color: var(--primary-yellow);
+  text-align: center;
+  margin-top: 15px;
 }
 
 /* Text Container & Cards */
