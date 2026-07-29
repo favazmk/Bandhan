@@ -106,17 +106,21 @@ function init() {
         // Preload function
         function preload3DImages(callback) {
             const loaderElement = document.querySelector('.scrollytelling-loader');
-            const progressText = loaderElement ? loaderElement.querySelector('p') : null;
+            const progressText = document.getElementById('loader-text');
+            const logoFill = document.getElementById('loader-fill');
 
             for (let i = 1; i <= totalFrames; i++) {
                 const img = new Image();
                 const frameNum = String(i).padStart(3, '0');
-                img.src = `./assets/3D New Sequences/ezgif-frame-${frameNum}.jpg`;
+                img.src = `./assets/3D New Sequences/ezgif-frame-${frameNum}.webp`;
                 
                 img.onload = () => {
                     loadedCount++;
                     if (progressText) {
-                        progressText.textContent = `Loading 3D Experience... ${Math.round((loadedCount / totalFrames) * 100)}%`;
+                        let percentage = Math.round((loadedCount / totalFrames) * 100);
+                        percentage = Math.max(1, percentage); // Start from at least 1%
+                        progressText.textContent = `Building Experience... ${percentage}%`;
+                        if (logoFill) logoFill.style.clipPath = `inset(${100 - percentage}% 0 0 0)`;
                     }
                     if (loadedCount === totalFrames) {
                         if (loaderElement) {
