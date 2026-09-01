@@ -690,6 +690,17 @@ header {
   max-width: 900px;
 }
 
+/* Transportation & Project Support (Services page) */
+.transport-grid {
+  margin-top: 80px;
+}
+
+@media (min-width: 993px) {
+  .transport-grid {
+    grid-template-columns: 1fr 1.15fr;
+  }
+}
+
 /* Contact layout & Form elements */
 .map-container {
   width: 100%;
@@ -744,6 +755,11 @@ header {
 }
 
 /* Contact page icons & tags */
+/* Clickable phone / email links in footer and contact cards */
+.contact-link:hover {
+  color: var(--primary-yellow);
+}
+
 .contact-item-icon {
   color: var(--primary-yellow);
   margin-right: 12px;
